@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import '$lib/global.scss';
+	import Calculator from '$lib/components/Calculator.svelte';
+</script>
+
+<main>
+	<h1>Min enkla miniräknare</h1>
+	<Calculator />
+</main>
+
+<style lang="scss">
+	main {
+		text-align: center;
+		padding: 20px;
+	}
+
+	h1 {
+		color: #333;
+	}
+</style>
